@@ -1,6 +1,6 @@
 """Simple command-line calculator used to practise Git workflows."""
 
-VERSION = "1.1"
+VERSION = "1.2"
 
 
 def add(a, b):
@@ -25,12 +25,19 @@ def power(a, b):
     return a ** b
 
 
+def modulo(a, b):
+    if b == 0:
+        raise ValueError("Cannot take modulo by zero")
+    return a % b
+
+
 OPERATIONS = {
     "+": add,
     "-": subtract,
     "*": multiply,
     "/": divide,
     "^": power,
+    "%": modulo,
 }
 
 
