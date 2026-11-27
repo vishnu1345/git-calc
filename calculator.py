@@ -1,6 +1,6 @@
 """Simple command-line calculator used to practise Git workflows."""
 
-VERSION = "1.0"
+VERSION = "1.1"
 
 
 def add(a, b):
@@ -21,11 +21,16 @@ def divide(a, b):
     return a / b
 
 
+def power(a, b):
+    return a ** b
+
+
 OPERATIONS = {
     "+": add,
     "-": subtract,
     "*": multiply,
     "/": divide,
+    "^": power,
 }
 
 
