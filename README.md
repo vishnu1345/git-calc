@@ -5,7 +5,7 @@ workflows: branching, committing, merging and resolving a merge conflict.
 
 ## Features
 
-- Supports addition, subtraction, multiplication and division.
+- Supports addition, subtraction, multiplication, division and modulo (%).
 
 ## Usage
 
